@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+
+header{
+    background-color: #000;
+    height: 80px;
+    padding: 10px 5px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+
+
+header .top-menu {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    display: flex;
+    column-gap: 20px;
+   
+}
+
+
+.top-menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header .top-menu li{
+    position: relative;
+}
+.top-menu li a:hover{
+    text-decoration: underline;
+   
+}
+.top-menu li ul.sub-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(1,1,1,0.1);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: max-content;
+}
+
+.top-menu li ul.sub-menu li{
+    color: #000;
+    list-style-type: none;
+   
+}
+
+.top-menu li ul.sub-menu li a {
+    color: #000; /* Set the text color */
+    padding: 10px 20px; /* Set padding for the sub-menu items */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Display sub-menu items as block elements */
+}
+
+.top-menu li ul.sub-menu li a:hover {
+    background-color: #e2a6a6; /* Change background color on hover */
+}
+
+
+.top-menu > .menu-item-has-children:hover > .sub-menu{
+    display: block;
+}
+
+.top-menu > .menu-item-has-children .sub-menu  > .menu-item-has-children:hover .sub-menu{
+display: block;
+}
+
+.top-menu .sub-menu li .sub-menu{
+    top: 0;
+    left: 100%;
+}
+
+
+/* footer  */
+
+footer{
+    max-width: 1200px;
+    margin: 10px auto 0px auto;
+}
+
+.footer-menu li.menu-item-has-children .sub-menu {
+   
+    margin-left: 30px;
+}
+/* Style for the post container */
+.post-container {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+}
+
+/* Style for the post title */
+.post-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style for the post excerpt */
+.post-excerpt {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Style for the "Read More" link */
+.read-more-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Hover effect for the "Read More" link */
+.read-more-link:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the container holding the navigation links */
+.post-navigation {
+    margin-top: 20px;
+}
+
+/* Style for the previous post link */
+
+.post-navigations {
+    margin-top: 20px;
+}
+
+/* Style for the previous and next post links */
+.post-navigations a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Hover effect for the post navigation links */
+.post-navigations a:hover {
+    background-color: #0056b3;
+}
+
+
+/* Style for the post tags */
+.post-tags {
+    margin-top: 20px;
+}
+
+.post-tags ul {
+    list-style: none;
+    padding: 0;
+}
+
+.post-tags ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.post-tags ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.post-tags ul li a:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the post categories */
+.post-categories {
+    margin-top: 20px;
+}
+
+.post-categories .categories {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.post-categories .categories:hover {
+    background-color: #0056b3;
+}
+
+
